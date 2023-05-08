@@ -27,6 +27,7 @@ void setup() {
 
   pinMode(trig, OUTPUT);
   pinMode(echo, INPUT);
+
   
   Serial.begin(9600); // velocidad de comunicación serie con el ordenador
   BTSerial.begin(38400); // velocidad de comunicación serie con el módulo Bluetooth.-
