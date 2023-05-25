@@ -9,7 +9,7 @@ String mensaje;
 void conectarWIFI(){
   Serial.print("Connecting to Adafruit IO");
   io.connect();
-
+  delay(100);
   // wait for a connection
   while(io.status() < AIO_CONNECTED) {
     Serial.print(".");
@@ -84,7 +84,8 @@ void setup() {
 void loop() {
 
   Recibir();
-  
+  //Serial.println("Hola");
+  //delay(500);
 
 
   io.run();
